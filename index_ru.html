@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backlun</title>
+    <link rel="stylesheet" href="/src/bootstrap.min.css">
+    <link rel="stylesheet" href="/src/index.css">
+</head>
+<body>
+    <main class="jumbotron index">
+        <img src="/src/logo.png" alt="logo" class="logo">
+        <h1 class="main-title">Backlun</h1>
+        <h3>Описание</h3>
+        <p>Backlun — это набор различных бэкенд-сервисов (платформ) с API, но без фронтенда. Вы можете создать любой фронтенд с помощью любых библиотек, фреймворков или JS-диалектов. Backlun не требует установки, не имеет зависимостей и работает на Linux, Windows и OS X. Достаточно скачать Backlun и начать использовать его.</p>
+
+        <h4>Зачем?</h4>
+        <p>Backlun будет полезен для фронтенд-разработчиков, не владеющих навыками разработки на бэкенде, но желающих потренироваться в создании фронтенда или дизайне для настоящих динамических приложений. Backlun подходит для разработчиков, которые хотят испытать в деле новый фреймворк, но не хотят писать бэкенд приложение для этого. Backlun станет хорошим выбором для нанимателя, который хочет проверить навыки нанимаемого фронтенд-разработчика.</p>
+
+        <h4>Примеры использования</h4>
+        <p>Вы хотите научиться писать фронтенд на TypeScript или ELM. Вы прочитали туториал по React и хотите создать первое настоящее приложение. Вы хотите нанять нового фронтенд-разработчика, но он ранее работал только с вёрсткой статичных страниц и вы хотите проверить его способности по созданию приложений, взаимодействующих с сервером через API. Вам нужен простой инструмент для тестовых заданий для кандидатов на вакансию.</p>
+
+        <h3>Платформы</h3>
+        <ul>
+            <li><a href="/en/todo.html">ToDo List</a> — Записывайте свои цели и задачи, разбивайте их по категориям и выполняйте.</li>
+            <li><a href="/en/blog.html">Blog</a> — Ведите свой блог, создавайте новые посты, добавляйте к ним теги и оставляйте комментарии.</li>
+            <li><a href="/en/market.html">Market</a> — Кладите товар в корзину, пополняйте счёт виртуальными деньгами и совершайте покупки.</li>
+            <li><a href="/en/forum.html">Forum</a> — Регистрируйтесь, общайтесь на форуме, создавайте новые темы и отвечайте в них.</li>
+            <li><a href="/en/blackjack.html">Blackjack</a> — Сыграйте в классическую карточную игру и попытайтесь набрать 21 очко раньше ваших соперников.</li>
+            <li><a href="/en/calendar.html">Calendar</a> — Ведите ежедневник, отмечайте в нём прошедшие и грядущие события, как быстрые, так и растянутые во времени.</li>
+            <li><a href="/en/geopos.html">Geopos</a> — Выберите точку на карте и получите расстояние между отмеченным местом и вами.</li>
+            <li><a href="/en/oauth.html">OAuth</a> — Используйте новейший OAuth 2.0 сервис авторизации.</li>
+            <li><a href="/en/chat.html">Chat</a> — Общайтесь в чате на вебсокетах.
+        </ul>
+
+        <h3>Установка</h3>
+        <h4>Скачивание</h4>
+        <p>Выберите желаемую версию на <a href="https://github.com/Vladimir37/Backlun/releases">странице релизов</a> или выберите её ниже:</p>
+        <ul>
+            <li><a href="https://github.com/Vladimir37/Backlun/releases/download/1.0/backlun_windows.zip">Backlun Windows</a></li>
+            <li><a href="https://github.com/Vladimir37/Backlun/releases/download/1.0/backlun_linux.zip">Backlun Linux</a></li>
+            <li><a href="https://github.com/Vladimir37/Backlun/releases/download/1.0/backlun_osx.zip">Backlun OS X</a></li>
+        </ul>
+        <p>Скачайте архив и распакуйте его в любое удобное вам место.</p>
+
+        <h4>Запуск приложения</h4>
+        <ul>
+            <li><b>Windows</b> — Запустите <span class="main-addr">Backlun.exe</span> внутри каталога.</li>
+            <li><b>Linux and OSX</b> — Выполните <span class="main-addr">Backlun</span> через терминал. Пример команды: <span class="main-addr">./Backlun</span>. Если это необходимо, дайте файлу права на исполнение: <span class="main-addr">chmod +x Backlun</span>.</li>
+        </ul>
+
+        <h4>Запуск платформ</h4>
+        <p>После запуска приложения вы увидите терминал. Выполните одну из следующих команд:</p>
+        <ul>
+            <li><span class="main-addr">help</span> — Показать полную помощь</li>
+            <li><span class="main-addr">help &lt;platform&gt;</span> — Показать помощь по выбранной платформе.</li>
+            <li><span class="main-addr">start &lt;platform&gt; [&lt;port&gt;]</span> — Запустить выбранную платформу. Вы можете дополнительно указать порт.</li>
+        </ul>
+
+        <p>Примеры:</p>
+        <ul>
+            <li><span class="main-addr">start blog</span> — Запустить платформу "blog" на порте 8000.</li>
+            <li><span class="main-addr">start forum 5000</span> — Запустить платформу "forum" на порте 5000.</li>
+            <li><span class="main-addr">help market</span> — Показать помощь по платформе "market".</li>
+        </ul>
+
+        <h5>Примечание для платформы "OAuth"</h5>
+        <p>Запуск платформы "OAuth" отличается от запуска других платформ.</p>
+        <p><span class="main-addr">start oauth [&lt;port&gt; &lt;host&gt; &lt;key&gt;]</span></p>
+
+        <p><span class="main-addr">key</span> - ключевой файл. По умолчанию имя файла - <span class="main-addr">key.json</span> и он должен быть расположен в корневом каталоге <span class="main-addr">Backlun/</span>. Изначально этот файл отсутствует и должен быть создан пользователем при необходимости. Структура ключевого файла:</p> 
+        <div class="code">
+        { 
+            "cid": string, 
+            "csecret": string
+        }
+        </div>
+
+        <h4>Компиляция</h4>
+        <p>Вы можете не использовать готовые бинарные файлы, а скомпилировать Backlun самостоятельно. Скачайте <a href="https://github.com/Vladimir37/Backlun/archive/master.zip">исходный код Backlun</a>. Распакуйте в любое удобное место, перейдите в директорию и выполните <span class="main-addr">go build Backlun.go</span>. Если у вас не установлен Golang, вы можете сделать это по <a href="https://golang.org/doc/install">иснтрукции</a>. Для успешной компиляции у вас должны быть установлены все зависимости. Вы можете увидеть недостающие при попытке начать компиляцию.</p>
+
+        <h3>Тесты</h3>
+        <p>Также для каждой платформы существуют тесты. Вы можете найти тесты для каждой платформы в каталоге <span class="main-addr">tests/</span>. Вы можете использовать код тестов для написания фронтенда.</p>
+
+        <h3>Разработка</h3>
+        <p>Разработчики: <a href="https://github.com/Vladimir37">Vladimir37</a> (ToDo, Blog, Market, Forum, Blackjack, Calendar), <a href="https://github.com/asm-jaime">Jaime</a> (Geopos, OAuth, Chat, тесты).</p>
+
+        <p>Графика сделана с использованием <a href="http://logomakr.com">Logo Maker</a>.</p>
+    </main>
+</body>
+</html>

@@ -11,13 +11,13 @@
         <img src="/src/logo.png" alt="logo" class="logo">
         <h1 class="main-title">Backlun</h1>
         <h3>Description</h3>
-        <p>Backlun — a set of various Back-end services (platforms) with a API, but missing the Front-end. You can create any Front-end using any framework, libraries, JS dialects.</p>
+        <p>Backlun — a set of various Back-end services (platforms) with a API, but missing the Front-end. You can create any Front-end using any framework, libraries, JS dialects. Backlun does not require installation and has no dependencies, and also run on Linux, Windows and OS X. It's enough to download Backlun and start using it.</p>
 
         <h4>Why?</h4>
-        <p>Backlun will be useful for Front-end developers who are not familiar with Back-end development, but who want to create a Front-end for a real dynamic application. Backlun is suitable for developers who want to try out a new Front-end framework, but do not want to create a back-end part of the application for this. Backlun is a good choice for an employer who wants to test the knowledge of a hired Front-end developer.</p>
+        <p>Backlun will be useful for Front-end developers who are not familiar with Back-end development, but who want to practice in Front-end development or design for real dynamic applications. Backlun is suitable for developers who want to try out a new Front-end framework, but do not want to create a back-end part of the application for this. Backlun is a good choice for an employer who wants to test the knowledge of a hired Front-end developer.</p>
 
         <h4>Examples of using</h4>
-        <p>You want to learn how to write a Front-end on a TypeScript or ELM. You read the React tutorial and want to write the first practical application. You want to hire a new developer, but he previously made only static pages and you want to test his ability to create an application that interacts with the server through API.</p>
+        <p>You want to learn how to write a Front-end on a TypeScript or ELM. You read the React tutorial and want to write the first practical application. You want to hire a new developer, but he previously made only static pages and you want to test his ability to create an application that interacts with the server through API. You need a simple tool for test tasks to select candidates for a job.</p>
 
         <h3>Platforms</h3>
         <ul>
@@ -40,7 +40,7 @@
             <li><a href="https://github.com/Vladimir37/Backlun/releases/download/1.0/backlun_linux.zip">Backlun Linux</a></li>
             <li><a href="https://github.com/Vladimir37/Backlun/releases/download/1.0/backlun_osx.zip">Backlun OS X</a></li>
         </ul>
-        <p>Download the archive, unzip it to any convenient place</p>
+        <p>Download the archive, unzip it to any convenient place.</p>
 
         <h4>Running the app</h4>
         <ul>
@@ -67,7 +67,7 @@
         <p>Starting of the OAuth platform is different from other platforms.</p>
         <p><span class="main-addr">start oauth [&lt;port&gt; &lt;host&gt; &lt;key&gt;]</span></p>
 
-        <p><span class="main-addr">key</span> - key file. The default file name is <span class="main-addr">key.json</span> and it should be located in the root folder <span class="main-addr">Backlun/</span>. Key file structure:</p> 
+        <p><span class="main-addr">key</span> - key file. The default file name is <span class="main-addr">key.json</span> and it should be located in the root folder <span class="main-addr">Backlun/</span>. Initially, this file is missing and must be created by the user if necessary. Key file structure:</p> 
         <div class="code">
         { 
             "cid": string, 
@@ -76,7 +76,10 @@
         </div>
 
         <h4>Compilation</h4>
-        <p>You can not use binary files, but compile Backlun from the source code yourself. Download <a href="https://github.com/Vladimir37/Backlun/archive/master.zip">Backlun source code</a>. Unzip to any convenient place, go to the directory and run <span class="main-addr">go build Backlun.go</span>. If you do not have Golang installed, then you can install it according to the <a href="https://golang.org/doc/install">instructions</a>.</p>
+        <p>You can not use binary files, but compile Backlun from the source code yourself. Download <a href="https://github.com/Vladimir37/Backlun/archive/master.zip">Backlun source code</a>. Unzip to any convenient place, go to the directory and run <span class="main-addr">go build Backlun.go</span>. If you do not have Golang installed, then you can install it according to the <a href="https://golang.org/doc/install">instructions</a>. For successful compilation, you will need to install all dependencies. You will see what's missing when you try to start compiling.</p>
+
+        <h3>Tests</h3>
+        <p>There are tests for each platform. You can find tests for each platform in the directory <span class="main-addr">tests/</span>. You can use the test code to write your own Front-end.</p>
 
         <h3>Development</h3>
         <p>Developers: <a href="https://github.com/Vladimir37">Vladimir37</a> (ToDo, Blog, Market, Forum, Blackjack, Calendar), <a href="https://github.com/asm-jaime">Jaime</a> (Geopos, OAuth, Chat, tests).</p>
