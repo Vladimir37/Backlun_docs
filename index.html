@@ -2,15 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Market Backlun</title>
+    <title>Backlun</title>
     <link rel="stylesheet" href="/src/bootstrap.min.css">
     <link rel="stylesheet" href="/src/index.css">
 </head>
 <body>
-    <main class="jumbotron">
+    <main class="jumbotron index">
         <img src="/src/logo.png" alt="logo" class="logo">
         <h1 class="main-title">Backlun</h1>
-        //
+        <h3>Description</h3>
+        <p>Backlun — a set of various Back-end services (platforms) with a API, but missing the Front-end. You can create any Front-end using any framework, libraries, JS dialects.</p>
+
+        <h4>Why?</h4>
+        <p>Backlun will be useful for Front-end developers who are not familiar with Back-end development, but who want to create a Front-end for a real dynamic application. Backlun is suitable for developers who want to try out a new Front-end framework, but do not want to create a back-end part of the application for this. Backlun is a good choice for an employer who wants to test the knowledge of a hired Front-end developer.</p>
+
+        <h4>Examples of using</h4>
+        <p>You want to learn how to write a Front-end on a TypeScript or ELM. You read the React tutorial and want to write the first practical application. You want to hire a new developer, but he previously made only static pages and you want to test his ability to create an application that interacts with the server through API.</p>
+
+        <h3>Platforms</h3>
+        <ul>
+            <li><a href="/en/todo.html">ToDo List</a> — Write down your goals and tasks, split them into categories and perform.</li>
+            <li><a href="/en/blog.html">Blog</a> — Manage the blog, create new posts, add tags and comment on them.</li>
+            <li><a href="/en/market.html">Market</a> — Put the goods in the shopping cart, top up the account with virtual money and make purchases.</li>
+            <li><a href="/en/forum.html">Forum</a> — Sign up, communicate at a forum, create topics and reply to them.</li>
+            <li><a href="/en/blackjack.html">Blackjack</a> — Play the classic card game and try to get 21 points before your opponents.</li>
+            <li><a href="/en/calendar.html">Calendar</a> — Keep a calendar, write in it future and past events, both short and long.</li>
+            <li><a href="/en/geopos.html">Geopos</a> — Select a point on the map and find the distance from you to it.</li>
+            <li><a href="/en/oauth.html">OAuth</a> — Use the newest OAuth 2.0 authorization service.</li>
+            <li><a href="/en/chat.html">Chat</a> — Use chat on WebSockets.
+        </ul>
+
+        <h3>Install</h3>
+        <h4>Downloading</h4>
+        <p>Select the desired version on <a href="https://github.com/Vladimir37/Backlun/releases">release page</a> or select it below:</p>
+        <ul>
+            <li><a href="https://github.com/Vladimir37/Backlun/releases/download/1.0/backlun_windows.zip">Backlun Windows</a></li>
+            <li><a href="https://github.com/Vladimir37/Backlun/releases/download/1.0/backlun_linux.zip">Backlun Linux</a></li>
+            <li><a href="https://github.com/Vladimir37/Backlun/releases/download/1.0/backlun_osx.zip">Backlun OS X</a></li>
+        </ul>
+        <p>Download the archive, unzip it to any convenient place</p>
+
+        <h4>Running the app</h4>
+        <ul>
+            <li><b>Windows</b> — Execute the <span class="main-addr">Backlun.exe</span> inside the directory.</li>
+            <li><b>Linux and OSX</b> — Execute the <span class="main-addr">Backlun</span> through the terminal. Example command: <span class="main-addr">./Backlun</span>. If necessary, give the file the right to execute: <span class="main-addr">chmod +x Backlun</span>.</li>
+        </ul>
+
+        <h4>Running the platforms</h4>
+        <p>After starting, you will see the console. Enter one of the following commands:</p>
+        <ul>
+            <li><span class="main-addr">help</span> — Show full help</li>
+            <li><span class="main-addr">help &lt;platform&gt;</span> — Show help for the selected platform.</li>
+            <li><span class="main-addr">start &lt;platform&gt; [&lt;port&gt;]</span> — Run the selected platform. You can optionally specify a port.</li>
+        </ul>
+
+        <p>Examples:</p>
+        <ul>
+            <li><span class="main-addr">start blog</span> — Start blog platform on port 8000.</li>
+            <li><span class="main-addr">start forum 5000</span> — Start forum platform on port 5000.</li>
+            <li><span class="main-addr">help market</span> — Show help for market platform.</li>
+        </ul>
+
+        <h5>Note for the OAuth platform</h5>
+        <p>Starting of the OAuth platform is different from other platforms.</p>
+        <p><span class="main-addr">start oauth [&lt;port&gt; &lt;host&gt; &lt;key&gt;]</span></p>
+
+        <p><span class="main-addr">key</span> - key file. The default file name is <span class="main-addr">key.json</span> and it should be located in the root folder <span class="main-addr">Backlun/</span>. Key file structure:</p> 
+        <div class="code">
+        { 
+            "cid": string, 
+            "csecret": string
+        }
+        </div>
+
+        <h4>Compilation</h4>
+        <p>You can not use binary files, but compile Backlun from the source code yourself. Download <a href="https://github.com/Vladimir37/Backlun/archive/master.zip">Backlun source code</a>. Unzip to any convenient place, go to the directory and run <span class="main-addr">go build Backlun.go</span>. If you do not have Golang installed, then you can install it according to the <a href="https://golang.org/doc/install">instructions</a>.</p>
+
+        <h3>Development</h3>
+        <p>Developers: <a href="https://github.com/Vladimir37">Vladimir37</a> (ToDo, Blog, Market, Forum, Blackjack, Calendar), <a href="https://github.com/asm-jaime">Jaime</a> (Geopos, OAuth, Chat, tests).</p>
+
+        <p>Graphics made with <a href="http://logomakr.com">Logo Maker</a>.</p>
     </main>
 </body>
 </html>

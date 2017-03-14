@@ -51,3 +51,16 @@ p.main-text {
     top: 0px;
     right: 10px;
 }
+
+/* Index */
+.index p, .index li {
+    font-size: 18px;
+}
+
+.index .code {
+    padding: 5px;
+    font-size: 18px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    background: white;
+}
